@@ -1,0 +1,13 @@
+{
+	"name": "lmntix-html",
+	"description": "Lmntix landing page",
+	"version": "0.0.2",
+	"scripts": {
+		"dev": "npx tailwindcss -i ./css/style.css -o ./style.css --watch",
+		"build": "npx tailwindcss -i ./css/style.css -o ./style.css"
+	},
+	"devDependencies": {
+		"@tailwindcss/forms": "0.5.10",
+		"tailwindcss": "3.4.17"
+	}
+}

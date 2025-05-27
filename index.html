@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>LMNTiX AI</title>
+    <meta name="description"
+          content="AI-native platform for chemistry and materials science. Built for how researchers really think.">
+    <meta name="keywords"
+          content="AI, chemistry, materials science, research, scientific data, innovation, LMNTiX">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css">
+  </head>
+  <body class="font-inter antialiased bg-lmntix-white text-lmntix-primary dark:bg-lmntix-primary dark:text-lmntix-white tracking-tight">
+    <!-- Page wrapper -->
+    <div class="relative flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
+      <!-- Bg coloured shapes -->
+      <div class="absolute inset-y-0 w-[1102px] left-1/2 -translate-x-1/2 -z-10 pointer-events-none blur-3xl"
+           aria-hidden="true">
+        <div class="absolute w-[960px] h-24 top-12 animate-[swing_8s_ease-in-out_infinite] before:absolute before:inset-0 before:rounded-tl-full before:rounded-br-full before:bg-gradient-to-b before:from-transparent before:to-transparent before:via-lmntix-accent-teal before:-rotate-[42deg]">
+        </div>
+        <div class="absolute w-[960px] h-24 -top-12 -left-28 animate-[swing_15s_-1s_ease-in-out_infinite] before:absolute before:inset-0 before:rounded-tl-full before:rounded-br-full before:bg-gradient-to-b before:from-transparent before:to-transparent before:via-lmntix-white dark:before:via-lmntix-accent-teal/70 before:-rotate-[42deg]">
+        </div>
+        <div class="absolute w-[960px] h-16 top-36 left-80 animate-[swing_7s_-2s_ease-in-out_infinite] before:absolute before:inset-0 before:rounded-tl-full before:rounded-br-full before:bg-gradient-to-b before:from-transparent before:to-transparent before:via-lmntix-white dark:before:via-lmntix-accent-teal/70 before:-rotate-[42deg]">
+        </div>
+        <div class="absolute w-[960px] h-64 top-[820px] left-44 animate-[swing_10s_ease-in-out_infinite] before:absolute before:inset-0 before:rounded-tl-full before:rounded-br-full before:bg-gradient-to-b before:from-transparent before:to-transparent before:via-lmntix-accent-teal/30 dark:before:via-lmntix-accent-teal/30 before:-rotate-[42deg]">
+        </div>
+        <div class="absolute w-[480px] h-12 top-[970px] left-[550px] animate-[swing_15s_-2s_ease-in-out_infinite] before:absolute before:inset-0 before:rounded-tl-full before:rounded-br-full before:bg-gradient-to-b before:from-transparent before:to-transparent before:via-lmntix-white dark:before:via-lmntix-primary/50 before:-rotate-[42deg]">
+        </div>
+        <div class="absolute w-[960px] h-16 top-[820px] left-24 animate-[swing_9s_-3s_ease-in-out_infinite] before:absolute before:inset-0 before:rounded-tl-full before:rounded-br-full before:bg-gradient-to-b before:from-transparent before:to-transparent before:via-lmntix-white dark:before:via-lmntix-primary/70 before:-rotate-[42deg]">
+        </div>
+      </div>
+      <!-- Vertical lines -->
+      <div class="absolute inset-y-0 w-[1102px] left-1/2 -translate-x-1/2 -z-10 pointer-events-none"
+           aria-hidden="true">
+        <!-- Left side -->
+        <div class="before:absolute before:inset-y-0 before:left-0 before:border-l before:[border-image:linear-gradient(to_bottom,theme(colors.lmntix-accent-teal/.4),transparent)1] dark:before:[border-image:linear-gradient(to_bottom,theme(colors.lmntix-accent-teal/.16),transparent)1] before:shadow-[-1px_0_0_0_theme(colors.lmntix-white/.2)] dark:before:shadow-none after:absolute after:inset-y-0 after:left-20 after:border-l after:[border-image:linear-gradient(to_bottom,theme(colors.lmntix-accent-teal/.4),transparent)1] dark:after:[border-image:linear-gradient(to_bottom,theme(colors.lmntix-accent-teal/.16),transparent)1] after:shadow-[-1px_0_0_0_theme(colors.lmntix-white/.2)] dark:after:shadow-none">
+        </div>
+        <!-- Right side -->
+        <div class="before:absolute before:inset-y-0 before:right-0 before:border-l before:[border-image:linear-gradient(to_bottom,theme(colors.lmntix-accent-teal/.4),transparent)1] dark:before:[border-image:linear-gradient(to_bottom,theme(colors.lmntix-accent-teal/.16),transparent)1] before:shadow-[-1px_0_0_0_theme(colors.lmntix-white/.2)] dark:before:shadow-none after:absolute after:inset-y-0 after:right-20 after:border-l after:[border-image:linear-gradient(to_bottom,theme(colors.lmntix-accent-teal/.4),transparent)1] dark:after:[border-image:linear-gradient(to_bottom,theme(colors.lmntix-accent-teal/.16),transparent)1] after:shadow-[-1px_0_0_0_theme(colors.lmntix-white/.2)] dark:after:shadow-none">
+        </div>
+      </div>
+      <!-- Site header -->
+      <header class="absolute top-4 md:top-6 w-full z-30 pb-4 md:pb-6 border-b [border-image:linear-gradient(to_right,transparent,theme(colors.lmntix-accent-teal/.4),transparent)1] dark:[border-image:linear-gradient(to_right,transparent,theme(colors.lmntix-accent-teal/.16),transparent)1] shadow-[0_1px_0_0_theme(colors.lmntix-white/.2)] dark:shadow-none">
+        <div class="px-4 sm:px-6">
+          <div class="max-w-4xl mx-auto">
+            <div class="relative flex items-center justify-between gap-x-2 h-12 bg-gradient-to-b from-lmntix-white/90 to-lmntix-white/70 dark:from-lmntix-helper/80 dark:to-lmntix-helper/70 rounded-lg px-3 shadow">
+              <!-- Border with dots in corners -->
+              <div class="absolute -inset-1.5 bg-lmntix-accent-teal/15 dark:bg-lmntix-primary/50 rounded-sm -z-10 before:absolute before:inset-y-0 before:left-0 before:w-[10px] before:bg-[length:10px_10px] before:[background-position:top_center,bottom_center] before:bg-no-repeat before:[background-image:radial-gradient(circle_at_center,theme(colors.lmntix-accent-teal/.56)_1px,transparent_1px),radial-gradient(circle_at_center,theme(colors.lmntix-accent-teal/.56)_1px,transparent_1px)] dark:before:[background-image:radial-gradient(circle_at_center,theme(colors.lmntix-helper/.56)_1px,transparent_1px),radial-gradient(circle_at_center,theme(colors.lmntix-helper/.56)_1px,transparent_1px)] after:absolute after:inset-y-0 after:right-0 after:w-[10px] after:bg-[length:10px_10px] after:[background-position:top_center,bottom_center] after:bg-no-repeat after:[background-image:radial-gradient(circle_at_center,theme(colors.lmntix-accent-teal/.56)_1px,transparent_1px),radial-gradient(circle_at_center,theme(colors.lmntix-accent-teal/.56)_1px,transparent_1px)] dark:after:[background-image:radial-gradient(circle_at_center,theme(colors.lmntix-helper/.56)_1px,transparent_1px),radial-gradient(circle_at_center,theme(colors.lmntix-helper/.56)_1px,transparent_1px)]"
+                   aria-hidden="true"></div>
+              <!-- Site branding -->
+              <div class="flex-1">
+                <!-- Logo -->
+                <a href="index.html" class="inline-flex items-center gap-2 group">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       width="32"
+                       height="32"
+                       class="transition-transform duration-300 ease-in-out group-hover:scale-110">
+                    <path class="fill-lmntix-accent-teal" d="M16.975 3.036c6.402.475 11.514 5.586 11.99 11.989H24.32a7.345 7.345 0 0 1-7.345-7.345V3.036Zm-1.95 21.284v4.644c-6.402-.475-11.514-5.587-11.989-11.99H7.68a7.345 7.345 0 0 1 7.345 7.346Z" />
+                    <path class="fill-lmntix-primary" d="M3.036 15.025c.475-6.403 5.587-11.514 11.99-11.99V7.68a7.345 7.345 0 0 1-7.346 7.345H3.036Zm21.284 1.95h4.644c-.475 6.402-5.586 11.514-11.989 11.989V24.32a7.345 7.345 0 0 1 7.345-7.345Z" />
+                  </svg>
+                  <span class="text-xl font-bold text-lmntix-primary dark:text-lmntix-white group-hover:text-lmntix-accent-teal dark:group-hover:text-lmntix-accent-teal transition-colors duration-300 ease-in-out">LMNTiX.AI</span>
+                </a>
+              </div>
+              <!-- Navigation links -->
+              <!-- Removed navigation links -->
+              <!-- Dark / Light mode toggle -->
+              <!-- Removed dark/light mode toggle -->
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Page content -->
+      <main class="grow">
+        <section>
+          <div class="pt-32 pb-12 md:pt-44 md:pb-20">
+            <div class="px-4 sm:px-6">
+              <div class="max-w-5xl mx-auto mb-12">
+                <div class="text-center">
+                  <div class="relative flex items-center justify-center gap-4 mb-5 before:h-px before:w-24 before:border-b before:[border-image:linear-gradient(to_left,theme(colors.lmntix-accent-teal),transparent)1] dark:before:[border-image:linear-gradient(to_left,theme(colors.lmntix-accent-teal/.16),transparent)1] before:shadow-sm before:shadow-white/20 dark:before:shadow-none after:h-px after:w-24 after:border-b after:[border-image:linear-gradient(to_right,theme(colors.lmntix-accent-teal),transparent)1] dark:after:[border-image:linear-gradient(to_right,theme(colors.lmntix-accent-teal/.16),transparent)1] after:shadow-sm after:shadow-white/20 dark:after:shadow-none">
+                    <div class="relative text-sm font-medium text-lmntix-helper bg-lmntix-white dark:bg-lmntix-helper/70 inline-flex rounded-lg whitespace-nowrap px-3 py-[3px] tracking-normal before:absolute before:inset-0 before:rounded-lg before:[background-image:linear-gradient(120deg,transparent_0%,theme(colors.lmntix-accent-teal/.12)_33%,theme(colors.lmntix-accent-coral/.12)_66%,theme(colors.lmntix-accent-teal/.12)_100%)] dark:before:[background-image:linear-gradient(120deg,theme(colors.lmntix-accent-teal/.16),theme(colors.lmntix-primary/.16)_50%,transparent_100%)] shadow">
+                      <!-- Border with dots in corners -->
+                      <div class="absolute -inset-1.5 bg-lmntix-accent-teal/15 dark:bg-lmntix-primary/65 rounded-sm -z-10 before:absolute before:inset-y-0 before:left-0 before:w-[7px] before:bg-[length:7px_7px] before:[background-position:top_center,bottom_center] before:bg-no-repeat before:[background-image:radial-gradient(circle_at_center,theme(colors.lmntix-accent-teal/.56)_0.5px,transparent_0.5px),radial-gradient(circle_at_center,theme(colors.lmntix-accent-teal/.56)_0.5px,transparent_0.5px)] dark:before:[background-image:radial-gradient(circle_at_center,theme(colors.lmntix-helper/.56)_0.5px,transparent_0.5px),radial-gradient(circle_at_center,theme(colors.lmntix-helper/.56)_0.5px,transparent_0.5px)] after:absolute after:inset-y-0 after:right-0 after:w-[7px] after:bg-[length:7px_7px] after:[background-position:top_center,bottom_center] after:bg-no-repeat after:[background-image:radial-gradient(circle_at_center,theme(colors.lmntix-accent-teal/.56)_0.5px,transparent_0.5px),radial-gradient(circle_at_center,theme(colors.lmntix-accent-teal/.56)_0.5px,transparent_0.5px)] dark:after:[background-image:radial-gradient(circle_at_center,theme(colors.lmntix-helper/.56)_0.5px,transparent_0.5px),radial-gradient(circle_at_center,theme(colors.lmntix-helper/.56)_0.5px,transparent_0.5px)]"
+                           aria-hidden="true"></div>
+                      <span class="relative text-lmntix-primary dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-b dark:from-lmntix-accent-teal dark:to-lmntix-white">Reactor v1 <span class="text-lmntix-helper/70 mx-1">·</span> Coming Soon</span>
+                    </div>
+                  </div>
+                  <h1 class="font-inter-tight text-5xl md:text-6xl font-bold text-lmntix-primary dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-b dark:from-lmntix-white dark:to-lmntix-light-bg pb-4">
+                    Modern research is fragmented. Critical insights get lost.
+                  </h1>
+                  <p class="text-lg text-lmntix-helper dark:text-lmntix-light-bg/80">
+                    AI tools promise clarity — but often drown researchers in noise.
+                  </p>
+                  <p class="text-md text-lmntix-helper dark:text-lmntix-light-bg/70 mt-10 max-w-2xl mx-auto">
+                    LMNTiX is an AI-native platform for chemistry and materials science.
+                  </p>
+                  <p class="text-md text-lmntix-helper dark:text-lmntix-light-bg/70 mt-2 max-w-2xl mx-auto">
+                    It brings your research together — from ideas and data to conclusions — in one intelligent, context-aware workspace.
+                  </p>
+                  <p class="text-md text-lmntix-helper/80 dark:text-lmntix-light-bg/60 italic mt-10">
+                    Built for how researchers really think.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="relative py-12 md:py-20 bg-lmntix-light-bg dark:bg-lmntix-primary/30">
+          <!-- Border with dots in corners -->
+          <div class="absolute -inset-3 bg-lmntix-accent-teal/15 dark:bg-transparent dark:bg-gradient-to-b dark:from-lmntix-helper/80 dark:to-lmntix-helper/70 rounded-lg -z-10 before:absolute before:inset-y-0 before:left-0 before:w-[15px] before:bg-[length:15px_15px] before:[background-position:top_center,bottom_center] before:bg-no-repeat before:[background-image:radial-gradient(circle_at_center,theme(colors.lmntix-accent-teal/.56)_1.5px,transparent_1.5px),radial-gradient(circle_at_center,theme(colors.lmntix-accent-teal/.56)_1.5px,transparent_1.5px)] dark:before:[background-image:radial-gradient(circle_at_center,theme(colors.lmntix-helper)_1.5px,transparent_1.5px),radial-gradient(circle_at_center,theme(colors.lmntix-helper)_1.5px,transparent_1.5px)] after:absolute after:inset-y-0 after:right-0 after:w-[15px] after:bg-[length:15px_15px] after:[background-position:top_center,bottom_center] after:bg-no-repeat after:[background-image:radial-gradient(circle_at_center,theme(colors.lmntix-accent-teal/.56)_1.5px,transparent_1.5px),radial-gradient(circle_at_center,theme(colors.lmntix-accent-teal/.56)_1.5px,transparent_1.5px)] dark:after:[background-image:radial-gradient(circle_at_center,theme(colors.lmntix-helper)_1.5px,transparent_1.5px),radial-gradient(circle_at_center,theme(colors.lmntix-helper)_1.5px,transparent_1.5px)]"
+               aria-hidden="true"></div>
+          <div class="px-4 sm:px-6">
+            <!-- CTA Section Title and Copy -->
+            <div class="max-w-2xl mx-auto text-center mb-8">
+              <h2 class="text-3xl font-bold text-lmntix-primary dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-b dark:from-lmntix-white dark:to-lmntix-light-bg pb-3">
+                Be the first to experience LMNTiX.
+              </h2>
+              <p class="max-w-xl mx-auto text-lg text-lmntix-helper dark:text-lmntix-light-bg/80">
+                We're opening early access to a small group of researchers in chemistry and materials science.
+              </p>
+            </div>
+            <!-- Form & Avatars -->
+            <div class="relative flex items-center justify-center gap-10 before:h-px before:w-full before:border-b before:[border-image:linear-gradient(to_right,transparent,theme(colors.lmntix-accent-teal/.8),transparent)1] dark:before:[border-image:linear-gradient(to_right,transparent,theme(colors.lmntix-accent-teal/.16),transparent)1] before:shadow-sm before:shadow-white/20 dark:before:shadow-none after:h-px after:w-full after:border-b after:[border-image:linear-gradient(to_right,transparent,theme(colors.lmntix-accent-teal/.8),transparent)1] dark:after:[border-image:linear-gradient(to_right,transparent,theme(colors.lmntix-accent-teal/.16),transparent)1] after:shadow-sm after:shadow-white/20 dark:after:shadow-none mb-11">
+              <div class="w-full max-w-xs mx-auto shrink-0">
+                <form class="relative"
+                      id="waitlistForm"
+                      x-data="waitlistForm()"
+                      @submit.prevent="submitForm">
+                  <div class="space-y-3">
+                    <div>
+                      <label class="sr-only" for="email">Email</label>
+                      <div class="relative">
+                        <div class="absolute inset-y-0 left-0 text-lmntix-helper/70 dark:text-lmntix-light-bg/70 pl-4 flex items-center pointer-events-none">
+                          <svg class="fill-current"
+                               xmlns="http://www.w3.org/2000/svg"
+                               width="16"
+                               height="14">
+                            <path d="M14 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm0 12H2V5.723l5.504 3.145a.998.998 0 0 0 .992 0L14 5.723V12Zm0-8.58L8 6.849 2 3.42V2h12v1.42Z" />
+                          </svg>
+                        </div>
+                        <input id="emailInput"
+                               name="email"
+                               class="form-input text-sm w-full pl-10 pr-4 text-lmntix-primary dark:text-lmntix-white bg-lmntix-white dark:bg-lmntix-helper/70 border-lmntix-helper/30 dark:border-lmntix-primary/50 focus:border-lmntix-accent-teal dark:focus:border-lmntix-accent-teal"
+                               type="email"
+                               placeholder="Your email..."
+                               required
+                               x-model="email" />
+                      </div>
+                    </div>
+                    <div>
+                      <button type="submit"
+                              class="btn text-lmntix-white bg-lmntix-primary hover:bg-lmntix-accent-teal dark:text-lmntix-primary dark:bg-lmntix-white dark:hover:bg-lmntix-accent-teal/80 w-full"
+                              :disabled="loading"
+                              x-text="buttonText">Reserve Your Spot</button>
+                    </div>
+                  </div>
+                </form>
+                <div class="text-center mt-6" id="initialFormMessage">
+                  <p class="text-sm text-lmntix-helper dark:text-lmntix-light-bg/70">We'll reach out when it matters — not before.</p>
+                </div>
+                <div class="text-center mt-4 hidden" id="confirmationMessage">
+                  <h3 class="text-lg font-semibold text-lmntix-accent-teal">Thanks — you're on the list.</h3>
+                  <p class="text-md text-lmntix-helper italic">Stay curious.</p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="max-w-3xl mx-auto"></div> -->
+          </div>
+        </section>
+        <!-- Who It's For Section -->
+        <section class="py-12 md:py-20 bg-lmntix-white dark:bg-lmntix-primary/20">
+          <div class="px-4 sm:px-6">
+            <div class="max-w-4xl mx-auto text-center">
+              <h2 class="text-3xl md:text-4xl font-bold text-lmntix-primary dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-b dark:from-lmntix-white dark:to-lmntix-light-bg pb-4 mb-12">
+                Who is LMNTiX For?
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <!-- Column 1: Industrial Scientists -->
+                <div class="relative text-center p-8 rounded-lg shadow-xl bg-lmntix-light-bg dark:bg-lmntix-helper/30 transition-all duration-500 ease-in-out group hover:shadow-2xl hover:border-lmntix-accent-teal border-2 border-transparent overflow-hidden">
+                  <div class="absolute inset-0 bg-gradient-to-br from-lmntix-accent-teal/5 via-lmntix-accent-teal/0 to-lmntix-accent-teal/5 dark:from-lmntix-accent-teal/10 dark:via-lmntix-primary/20 dark:to-lmntix-accent-teal/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out -z-10 scale-150 group-hover:scale-100">
+                  </div>
+                  <div class="flex justify-center items-center mb-4 text-4xl text-lmntix-accent-teal dark:text-lmntix-accent-teal">
+                    <i class="ph ph-test-tube"></i>
+                  </div>
+                  <h3 class="text-xl font-semibold text-lmntix-primary dark:text-lmntix-white mb-2">Industrial Scientists</h3>
+                  <p class="text-md text-lmntix-helper dark:text-lmntix-light-bg/80">Streamline data, documents, and decision-making.</p>
+                </div>
+                <!-- Column 2: Academic Researchers -->
+                <div class="relative text-center p-8 rounded-lg shadow-xl bg-lmntix-light-bg dark:bg-lmntix-helper/30 transition-all duration-500 ease-in-out group hover:shadow-2xl hover:border-lmntix-accent-teal border-2 border-transparent overflow-hidden">
+                  <div class="absolute inset-0 bg-gradient-to-br from-lmntix-accent-teal/5 via-lmntix-accent-teal/0 to-lmntix-accent-teal/5 dark:from-lmntix-accent-teal/10 dark:via-lmntix-primary/20 dark:to-lmntix-accent-teal/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out -z-10 scale-150 group-hover:scale-100">
+                  </div>
+                  <div class="flex justify-center items-center mb-4 text-4xl text-lmntix-accent-teal dark:text-lmntix-accent-teal">
+                    <i class="ph ph-graduation-cap"></i>
+                  </div>
+                  <h3 class="text-xl font-semibold text-lmntix-primary dark:text-lmntix-white mb-2">Academic Researchers</h3>
+                  <p class="text-md text-lmntix-helper dark:text-lmntix-light-bg/80">Focus on insights, not interface clutter.</p>
+                </div>
+                <!-- Column 3: R&D Teams -->
+                <div class="relative text-center p-8 rounded-lg shadow-xl bg-lmntix-light-bg dark:bg-lmntix-helper/30 transition-all duration-500 ease-in-out group hover:shadow-2xl hover:border-lmntix-accent-teal border-2 border-transparent overflow-hidden">
+                  <div class="absolute inset-0 bg-gradient-to-br from-lmntix-accent-teal/5 via-lmntix-accent-teal/0 to-lmntix-accent-teal/5 dark:from-lmntix-accent-teal/10 dark:via-lmntix-primary/20 dark:to-lmntix-accent-teal/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out -z-10 scale-150 group-hover:scale-100">
+                  </div>
+                  <div class="flex justify-center items-center mb-4 text-4xl text-lmntix-accent-teal dark:text-lmntix-accent-teal">
+                    <i class="ph ph-users-three"></i>
+                  </div>
+                  <h3 class="text-xl font-semibold text-lmntix-primary dark:text-lmntix-white mb-2">R&D Teams</h3>
+                  <p class="text-md text-lmntix-helper dark:text-lmntix-light-bg/80">Stay aligned, organized, and project-aware.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Founding Team & Vision Section -->
+        <section class="relative py-12 md:py-20 dark:bg-lmntix-primary/30">
+          <!-- Border with dots in corners -->
+          <div class="absolute -inset-3 bg-lmntix-accent-teal/15 dark:bg-transparent dark:bg-gradient-to-b dark:from-lmntix-helper/80 dark:to-lmntix-helper/70 rounded-lg -z-10 before:absolute before:inset-y-0 before:left-0 before:w-[15px] before:bg-[length:15px_15px] before:[background-position:top_center,bottom_center] before:bg-no-repeat before:[background-image:radial-gradient(circle_at_center,theme(colors.lmntix-accent-teal/.56)_1.5px,transparent_1.5px),radial-gradient(circle_at_center,theme(colors.lmntix-accent-teal/.56)_1.5px,transparent_1.5px)] dark:before:[background-image:radial-gradient(circle_at_center,theme(colors.lmntix-helper)_1.5px,transparent_1.5px),radial-gradient(circle_at_center,theme(colors.lmntix-helper)_1.5px,transparent_1.5px)] after:absolute after:inset-y-0 after:right-0 after:w-[15px] after:bg-[length:15px_15px] after:[background-position:top_center,bottom_center] after:bg-no-repeat after:[background-image:radial-gradient(circle_at_center,theme(colors.lmntix-accent-teal/.56)_1.5px,transparent_1.5px),radial-gradient(circle_at_center,theme(colors.lmntix-accent-teal/.56)_1.5px,transparent_1.5px)] dark:after:[background-image:radial-gradient(circle_at_center,theme(colors.lmntix-helper)_1.5px,transparent_1.5px),radial-gradient(circle_at_center,theme(colors.lmntix-helper)_1.5px,transparent_1.5px)]"
+               aria-hidden="true"></div>
+          <div class="px-4 sm:px-6">
+            <div class="max-w-3xl mx-auto text-center">
+              <h2 class="text-3xl md:text-4xl font-bold text-lmntix-primary dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-b dark:from-lmntix-white dark:to-lmntix-light-bg pb-4 mb-6">
+                Built by Scientists and Engineers
+              </h2>
+              <p class="text-lg text-lmntix-helper dark:text-lmntix-light-bg/80 mb-6">
+                LMNTiX was founded by a visionary team of chemists and AI experts, backed by leading investors. We're creating a purpose-driven platform to accelerate discovery in chemistry and materials science — turning scattered data into structured insight, and helping scientists think with greater clarity and impact.
+              </p>
+              <p class="text-md font-medium text-lmntix-helper/80 dark:text-lmntix-light-bg/60 italic">
+                <span class="font-bold bg-gradient-to-r from-lmntix-accent-teal via-lmntix-helper to-lmntix-accent-coral-muted bg-clip-text text-transparent">We've lived the chaos of modern R&D. This is the platform we always wanted.</span>
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Site footer -->
+      <footer class="border-t [border-image:linear-gradient(to_right,transparent,theme(colors.lmntix-accent-teal/.4),transparent)1] dark:[border-image:linear-gradient(to_right,transparent,theme(colors.lmntix-accent-teal/.16),transparent)1] shadow-[0_1px_0_0_theme(colors.lmntix-white/.2)] dark:shadow-none bg-lmntix-white dark:bg-lmntix-primary">
+        <div class="px-4 sm:px-6">
+          <div class="max-w-3xl mx-auto">
+            <div class="text-center py-8">
+              <p class="text-sm text-lmntix-helper dark:text-lmntix-light-bg/70">
+                <a href="mailto:hello@lmntix.ai"
+                   class="hover:underline font-bold bg-gradient-to-r from-lmntix-accent-teal via-lmntix-helper to-lmntix-accent-coral-muted bg-clip-text text-transparent">
+                  hello@lmntix.ai
+                </a>
+                <span class="text-lmntix-helper/50 dark:text-lmntix-light-bg/50 mx-2">|</span>
+                <a href="privacy-policy.html"
+                   class="hover:underline text-lmntix-helper dark:text-lmntix-light-bg/70 hover:text-lmntix-accent-teal">Privacy Policy</a>
+                <span class="text-lmntix-helper/50 dark:text-lmntix-light-bg/50 mx-2">|</span>
+                <a href="terms.html"
+                   class="hover:underline text-lmntix-helper dark:text-lmntix-light-bg/70 hover:text-lmntix-accent-teal">Terms</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/vendors/alpinejs.min.js" defer></script>
+    <script src="./js/main.js"></script>
+    <script>
+      function waitlistForm() {
+        return {
+          email: '',
+          buttonText: 'Reserve Your Spot',
+          loading: false,
+          googleFormActionUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScX1WSUnCgEhDWMbx5UaiZtdps3CT3ITJ2224Xkt7AjX68rQw/formResponse',
+          googleFormEmailFieldName: 'entry.711156653',
+
+          submitForm() {
+            const emailInputElement = document.getElementById('emailInput');
+            if (!this.email || !emailInputElement.checkValidity()) {
+              alert('Please enter a valid email address.');
+              return;
+            }
+
+            this.buttonText = 'Submitting...';
+            this.loading = true;
+
+            const formData = new FormData();
+            formData.append(this.googleFormEmailFieldName, this.email);
+
+            const formElement = document.getElementById('waitlistForm');
+            const initialFormMessage = document.getElementById('initialFormMessage'); // Make sure this element exists or adjust
+            const confirmationMessage = document.getElementById('confirmationMessage');
+
+            fetch(this.googleFormActionUrl, {
+              method: 'POST',
+              body: formData,
+              mode: 'no-cors', // Important for 'silent' submission to Google Forms
+            })
+            .then(() => {
+              // Since mode is 'no-cors', we can't read the response.
+              // Optimistically assume success.
+              formElement.style.display = 'none';
+              if (initialFormMessage) initialFormMessage.style.display = 'none';
+              confirmationMessage.classList.remove('hidden');
+              // console.log('Form submitted to Google Forms (assumed success)');
+            })
+            .catch(error => {
+              console.error('Error submitting to Google Forms:', error);
+              // Even with 'no-cors', a network error might be caught here.
+              alert('Oops! There was a problem submitting your form. Please try again.');
+              // Reset button state on error
+              this.buttonText = 'Reserve Your Spot';
+              this.loading = false;
+            })
+            // .finally(() => {
+              // We don't use finally here because success state hides the form,
+              // and we only want to reset the button if there was an error and form is still visible.
+            // });
+          },
+        };
+      }
+    </script>
+  </body>
+</html>
