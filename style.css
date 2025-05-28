@@ -1865,6 +1865,10 @@ input[type="search"]::-webkit-search-results-decoration {
   --tw-gradient-to: rgb(255 255 255 / 0.7) var(--tw-gradient-to-position);
 }
 
+.to-lmntix-accent-coral{
+  --tw-gradient-to: #FF6B35 var(--tw-gradient-to-position);
+}
+
 .bg-clip-text{
   -webkit-background-clip: text;
           background-clip: text;
