@@ -38,6 +38,9 @@ module.exports = {
 					"50%": { transform: "translateY(-100px)" },
 				},
 			},
+			backgroundImage: {
+				"hero-image": "url('../assets/images/hero.jpg')",
+			},
 		},
 	},
 	plugins: [require("@tailwindcss/forms")],
