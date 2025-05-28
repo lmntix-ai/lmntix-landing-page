@@ -1693,6 +1693,10 @@ input[type="search"]::-webkit-search-results-decoration {
   gap: 2rem;
 }
 
+.gap-12{
+  gap: 3rem;
+}
+
 .gap-x-2{
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
@@ -2884,6 +2888,14 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .md\:gap-12{
     gap: 3rem;
+  }
+
+  .md\:gap-16{
+    gap: 4rem;
+  }
+
+  .md\:gap-14{
+    gap: 3.5rem;
   }
 
   .md\:py-20{
