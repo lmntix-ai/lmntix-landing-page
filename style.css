@@ -1526,6 +1526,10 @@ input[type="search"]::-webkit-search-results-decoration {
   max-width: 20rem;
 }
 
+.max-w-6xl{
+  max-width: 72rem;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
