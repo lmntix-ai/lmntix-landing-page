@@ -1882,6 +1882,10 @@ input[type="search"]::-webkit-search-results-decoration {
   padding: 2rem;
 }
 
+.p-6{
+  padding: 1.5rem;
+}
+
 .px-0\.5{
   padding-left: 0.125rem;
   padding-right: 0.125rem;
@@ -2486,6 +2490,11 @@ input[type="search"]::-webkit-search-results-decoration {
      border-image: linear-gradient(to right,#00A19D,transparent)1;
 }
 
+.hover\:-translate-y-2:hover{
+  --tw-translate-y: -0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:border-lmntix-accent-teal:hover{
   --tw-border-opacity: 1;
   border-color: rgb(0 161 157 / var(--tw-border-opacity, 1));
@@ -2604,6 +2613,12 @@ input[type="search"]::-webkit-search-results-decoration {
 .group:hover .group-hover\:scale-110{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:scale-125{
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
