@@ -1430,8 +1430,16 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-top: 2rem;
 }
 
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
 .block{
   display: block;
+}
+
+.inline-block{
+  display: inline-block;
 }
 
 .inline{
@@ -2025,6 +2033,26 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .italic{
   font-style: italic;
+}
+
+.leading-tight{
+  line-height: 1.25;
+}
+
+.leading-\[1\.15\]{
+  line-height: 1.15;
+}
+
+.leading-\[1\.2\]{
+  line-height: 1.2;
+}
+
+.leading-normal{
+  line-height: 1.5;
+}
+
+.leading-snug{
+  line-height: 1.375;
 }
 
 .tracking-normal{
