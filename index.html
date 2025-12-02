@@ -122,9 +122,14 @@
               We're opening early access to a small group of researchers in chemistry and materials science.
             </p>
           </div>
-          <!-- Form & Avatars -->
-          <div class="relative flex items-center justify-center gap-10 mb-11">
-            <div class="w-full max-w-2xl mx-auto shrink-0">
+          <!-- Form & Button -->
+          <div class="relative flex flex-col items-center justify-center gap-10 mb-11">
+            <!-- Join Wait List Button -->
+            <button id="joinWaitlistBtn" class="btn px-8 py-24 text-lg bg-[#000E19] hover:bg-[#001a2e]" style="color: #ffffff !important;">
+              Join Wait List
+            </button>
+            <!-- Hidden Form (shown when button is clicked) -->
+            <div id="waitlistForm" class="w-full max-w-2xl mx-auto shrink-0 hidden">
               <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLSctaabqngFOUTdefUG0gq_jIVIs9kMz9WVWMwi_c1yEoiy1JA/viewform?embedded=true"
                 width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>

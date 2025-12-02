@@ -32,3 +32,18 @@
 //     });
 //   });
 // }
+
+// Waitlist form toggle
+document.addEventListener('DOMContentLoaded', () => {
+  const joinWaitlistBtn = document.getElementById('joinWaitlistBtn');
+  const waitlistForm = document.getElementById('waitlistForm');
+
+  if (joinWaitlistBtn && waitlistForm) {
+    joinWaitlistBtn.addEventListener('click', () => {
+      waitlistForm.classList.remove('hidden');
+      joinWaitlistBtn.style.display = 'none';
+      // Smooth scroll to form
+      waitlistForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+});
